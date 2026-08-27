@@ -4,7 +4,7 @@ An end-to-end simulation project for the Franka Panda robot, covering motion pla
 
 > 中文简介：这是我的实习项目成果整理版。项目从 ROS 2 / MoveIt 2 基础运动规划逐步扩展到 Gazebo 自动抓放、MuJoCo–ROS 2 联合仿真、经典动力学控制、约束 MPC 与 PPO 鲁棒控制。
 
-![System overview](assets/images/ros2/system_overview.png)
+![Franka Panda pick-and-place scene](assets/images/ros2/pick_place_scene.png)
 
 ## Highlights
 
