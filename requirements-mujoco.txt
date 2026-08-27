@@ -1,0 +1,7 @@
+mujoco==3.11.0
+numpy
+matplotlib
+cvxpy
+osqp
+gymnasium
+stable-baselines3

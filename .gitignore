@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+build/
+install/
+log/
+
+# Generated experiment outputs
+outputs/
+*.log
+
+# Local third-party models and assets
+third_party/
+mujoco_menagerie/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

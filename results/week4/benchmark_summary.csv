@@ -1,0 +1,21 @@
+category,experiment,controller,metric,value,unit
+Classical,Static hold,PD only,Final error,0.128702,rad
+Classical,Static hold,PD + gravity,Final error,0.000001,rad
+Model-based,Dynamic tracking,PD + gravity,RMS error,0.031282,rad
+Model-based,Dynamic tracking,PD + inverse dynamics,RMS error,0.012329,rad
+Model-based,Dynamic tracking,Computed torque,RMS error,0.008018,rad
+MPC,Nominal tracking,Error-state MPC v3,RMS error,0.007924,rad
+MPC,Constraint challenge,Computed torque + clipping,RMS error,0.135545,rad
+MPC,Constraint challenge,Constrained MPC,RMS error,0.111671,rad
+RL,Safe action,PPO v3,RMS error,0.021994,rad
+RL,Safe action,PPO v4,RMS error,0.013099,rad
+RL,Safe action,PPO v3,Mean max torque step,78.700970,N*m
+RL,Safe action,PPO v4,Mean max torque step,10.000000,N*m
+RL,Robustness,PPO v4,Average RMS,0.017704,rad
+RL,Robustness,PPO v5,Average RMS,0.011220,rad
+RL,Robustness,PPO v4,Worst-case RMS,0.037045,rad
+RL,Robustness,PPO v5,Worst-case RMS,0.018671,rad
+RL,OOD,PPO v5,Nominal RMS,0.007149,rad
+RL,OOD,PPO v5,Average OOD RMS,0.017948,rad
+RL,OOD,PPO v5,Worst OOD RMS,0.035629,rad
+RL,OOD,PPO v5,Worst degradation ratio,4.98,x nominal

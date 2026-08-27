@@ -1,0 +1,60 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    panda_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    panda_hand_controller:
+      type: position_controllers/GripperActionController
+
+joint_state_broadcaster:
+  ros__parameters:
+    joints:
+      - panda_joint1
+      - panda_joint2
+      - panda_joint3
+      - panda_joint4
+      - panda_joint5
+      - panda_joint6
+      - panda_joint7
+      - panda_finger_joint1
+
+    interfaces:
+      - position
+      - velocity
+
+panda_arm_controller:
+  ros__parameters:
+    joints:
+      - panda_joint1
+      - panda_joint2
+      - panda_joint3
+      - panda_joint4
+      - panda_joint5
+      - panda_joint6
+      - panda_joint7
+
+    command_interfaces:
+      - position
+
+    state_interfaces:
+      - position
+      - velocity
+
+    state_publish_rate: 50.0
+    action_monitor_rate: 20.0
+    allow_partial_joints_goal: false
+
+panda_hand_controller:
+  ros__parameters:
+    joint: panda_finger_joint1
+    action_monitor_rate: 20.0
+    goal_tolerance: 0.002
+    max_effort: 0.0
+    allow_stalling: false
+    stall_velocity_threshold: 0.001
+    stall_timeout: 1.0
