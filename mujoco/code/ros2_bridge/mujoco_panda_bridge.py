@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from typing import List
 
@@ -9,13 +10,12 @@ from sensor_msgs.msg import JointState
 from std_msgs.msg import Float64MultiArray
 
 
-MODEL_PATH = (
-    Path.home()
-    / "mujoco_learning"
-    / "mujoco_menagerie"
-    / "franka_emika_panda"
-    / "scene.xml"
-)
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+MENAGERIE_ROOT = Path(os.environ.get(
+    "MUJOCO_MENAGERIE_PATH",
+    PROJECT_ROOT / "third_party" / "mujoco_menagerie",
+)).expanduser()
+MODEL_PATH = MENAGERIE_ROOT / "franka_emika_panda" / "scene.xml"
 
 # MuJoCo 模型内部使用的关节名称。
 MUJOCO_ARM_JOINT_NAMES = [f"joint{i}" for i in range(1, 8)]

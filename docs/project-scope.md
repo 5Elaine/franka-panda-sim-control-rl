@@ -8,7 +8,7 @@
 
 ## Explicit limitations
 
-- Week 4 MPC and PPO experiments control **joint 2 only**.
+- The MPC and PPO experiments control **joint 2 only**.
 - No real Franka robot was used; results are simulation-only.
 - No vision, learned grasp perception, VLA policy, sim-to-real transfer, or hardware safety validation is claimed.
 - Gazebo/MuJoCo comparisons include stack-level differences and should not be read as isolated physics-engine benchmarks.

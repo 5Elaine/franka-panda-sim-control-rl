@@ -5,7 +5,8 @@ import numpy as np
 
 
 BASE_DIR = Path(__file__).resolve().parent
-OUTPUT_DIR = Path.home() / "mujoco_learning" / "results" / "week3"
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+OUTPUT_DIR = PROJECT_ROOT / "outputs" / "mujoco_analysis"
 
 JOINT_CSV = BASE_DIR / "panda_home_target_home.csv"
 HAND_CSV = BASE_DIR / "panda_hand_pose_tracking.csv"
@@ -65,7 +66,7 @@ def plot_joint_positions(data: np.ndarray) -> None:
     )
     figure.tight_layout()
 
-    output = OUTPUT_DIR / "week3_mujoco_joint_position_tracking.png"
+    output = OUTPUT_DIR / "mujoco_joint_position_tracking.png"
     figure.savefig(output, dpi=200, bbox_inches="tight")
     plt.close(figure)
 
@@ -90,7 +91,7 @@ def plot_joint_velocities(data: np.ndarray) -> None:
     axis.grid(True)
     axis.legend(ncol=2)
 
-    output = OUTPUT_DIR / "week3_mujoco_joint_velocities.png"
+    output = OUTPUT_DIR / "mujoco_joint_velocities.png"
     figure.savefig(output, dpi=200, bbox_inches="tight")
     plt.close(figure)
 
@@ -112,7 +113,7 @@ def plot_hand_xyz(data: np.ndarray) -> None:
     axis.grid(True)
     axis.legend()
 
-    output = OUTPUT_DIR / "week3_mujoco_hand_xyz.png"
+    output = OUTPUT_DIR / "mujoco_hand_xyz.png"
     figure.savefig(output, dpi=200, bbox_inches="tight")
     plt.close(figure)
 
@@ -169,7 +170,7 @@ def plot_hand_path_3d(data: np.ndarray) -> None:
     top=0.90,
     )
 
-    output = OUTPUT_DIR / "week3_mujoco_hand_3d_path.png"
+    output = OUTPUT_DIR / "mujoco_hand_3d_path.png"
     figure.savefig(
     output,
     dpi=200,
@@ -234,7 +235,7 @@ def main() -> None:
     print_summary(joint_data, hand_data)
 
     print()
-    print("[PASS] Week 3 figures generated successfully.")
+    print("[PASS] MuJoCo figures generated successfully.")
 
 
 if __name__ == "__main__":

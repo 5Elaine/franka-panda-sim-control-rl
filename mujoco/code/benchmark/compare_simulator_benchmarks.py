@@ -7,12 +7,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-RESULT_DIR = (
-    Path.home()
-    / "mujoco_learning"
-    / "results"
-    / "week3"
-)
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+RESULT_DIR = PROJECT_ROOT / "outputs" / "simulator_benchmark"
 
 MUJOCO_SUMMARY = (
     RESULT_DIR

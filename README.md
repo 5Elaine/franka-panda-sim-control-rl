@@ -36,9 +36,9 @@ Full-resolution demo recordings are published with the [v1.0.0 release](https://
 | PPO v4 → domain-randomized PPO v5 | `0.017704 → 0.011220 rad` average RMS |
 | PPO v5 out-of-distribution evaluation | `0.017948 rad` average, `0.035629 rad` worst RMS, `0%` termination |
 
-![Controller comparison](assets/images/mujoco/week4/v4_vs_v5_combined_tracking.png)
+![Controller comparison](assets/images/mujoco/control/v4_vs_v5_combined_tracking.png)
 
-These Week 4 control and RL results use **Panda joint 2**, not simultaneous full-arm learned control. See [results and methodology](docs/results.md) for the exact scope and interpretation.
+These control and RL results use **Panda joint 2**, not simultaneous full-arm learned control. See [results and methodology](docs/results.md) for the exact scope and interpretation.
 
 ## Repository layout
 

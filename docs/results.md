@@ -18,9 +18,9 @@
 
 Measured publication rates were about 82.237 Hz in Gazebo and 50.409 Hz in MuJoCo. These are **system-level observations**, not a claim that one physics engine is intrinsically faster: controller tuning, command interpretation, bridge timing, and sampling rates differ.
 
-## Week 4 controller benchmark
+## Controller benchmark
 
-The consolidated source of truth is [`results/week4/benchmark_summary.csv`](../results/week4/benchmark_summary.csv).
+The consolidated source of truth is [`results/control/benchmark_summary.csv`](../results/control/benchmark_summary.csv).
 
 ### Classical and model-based control
 
@@ -41,4 +41,4 @@ The consolidated source of truth is [`results/week4/benchmark_summary.csv`](../r
 
 ## Data policy
 
-Raw and summary CSV files are committed for inspection. Trained PPO v4/v5 checkpoints are included. Plots in `assets/images/mujoco/week4/` are generated from the recorded experiment campaign.
+Raw and summary CSV files are committed for inspection. Trained PPO v4/v5 checkpoints are included. Plots in `assets/images/mujoco/control/` are generated from the recorded experiment campaign.
