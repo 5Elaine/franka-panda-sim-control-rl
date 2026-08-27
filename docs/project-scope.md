@@ -12,7 +12,7 @@
 - No real Franka robot was used; results are simulation-only.
 - No vision, learned grasp perception, VLA policy, sim-to-real transfer, or hardware safety validation is claimed.
 - Gazebo/MuJoCo comparisons include stack-level differences and should not be read as isolated physics-engine benchmarks.
-- The original PPO v3 environment and checkpoint were not present in the curated source bundle. Its numbers are retained as historical comparison results, while the included v4/v5 checkpoints are directly inspectable.
+- The original PPO v3 environment and checkpoint were not present in the available source bundle. Its numbers are retained as historical comparison results, while the included v4/v5 checkpoints are directly inspectable.
 
 ## Reproducibility boundary
 

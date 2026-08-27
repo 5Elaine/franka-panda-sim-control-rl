@@ -1,8 +1,8 @@
 # Franka Panda Simulation, Control and Reinforcement Learning
 
-An end-to-end simulation project for the Franka Panda robot, covering motion planning, collision-aware pick-and-place, dynamics control, constrained MPC, reinforcement learning, and ROS 2 integration across Gazebo and MuJoCo.
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-> 中文简介：这是我的实习项目成果整理版。项目从 ROS 2 / MoveIt 2 基础运动规划逐步扩展到 Gazebo 自动抓放、MuJoCo–ROS 2 联合仿真、经典动力学控制、约束 MPC 与 PPO 鲁棒控制。
+An end-to-end simulation project for the Franka Panda robot, covering motion planning, collision-aware pick-and-place, dynamics control, constrained MPC, reinforcement learning, and ROS 2 integration across Gazebo and MuJoCo.
 
 ![Franka Panda pick-and-place scene](assets/images/ros2/pick_place_scene.png)
 
@@ -50,7 +50,7 @@ These control and RL results use **Panda joint 2**, not simultaneous full-arm le
 │   ├── control/              # Classical control, MPC, and PPO
 │   └── config/               # RViz configuration
 ├── results/                  # Raw CSV data, summaries, and plots
-├── assets/images/            # Portfolio-ready screenshots and figures
+├── assets/images/            # Screenshots and experiment figures
 └── docs/                     # Architecture, setup, results, and project scope
 ```
 
@@ -72,7 +72,7 @@ Detailed instructions are in [docs/setup.md](docs/setup.md). The MuJoCo Menageri
 
 ## Project status
 
-This repository is a curated internship-project snapshot. It contains the source code, trained PPO v4/v5 checkpoints, experiment CSVs, and presentation figures. It does **not** claim real-robot deployment, vision-based grasping, sim-to-real validation, or full-arm MPC/RL control.
+The repository contains the source code, trained PPO v4/v5 checkpoints, experiment CSVs, and result figures. The current scope is simulation-only and does **not** include real-robot deployment, vision-based grasping, sim-to-real validation, or full-arm MPC/RL control.
 
 ## Third-party components
 
